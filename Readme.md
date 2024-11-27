@@ -26,7 +26,7 @@ A web application for searching cars with advanced filtering options.
 1. Clone the repository:
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/ShuhaiYu/car-demo.git
     cd car-search-application
     ```
 
