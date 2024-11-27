@@ -27,7 +27,7 @@ A web application for searching cars with advanced filtering options.
 
     ```bash
     git clone https://github.com/ShuhaiYu/car-demo.git
-    cd car-search-application
+    cd car-demo
     ```
 
 2. Start the backend and database using Docker:
