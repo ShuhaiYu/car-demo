@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply border p-2 px-4 rounded-full mb-2 md:mb-0 min-w-40;
+  }
+
+  /* Scroll bar style */
+  .dropdown-scrollable::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .dropdown-scrollable::-webkit-scrollbar-track {
+    background: #051c2c; 
+    border-radius: 6px;
+  }
+
+  .dropdown-scrollable::-webkit-scrollbar-thumb {
+    background: #a1a1a1; 
+    border-radius: 6px;
+  }
+
+  .dropdown-scrollable::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
+}
