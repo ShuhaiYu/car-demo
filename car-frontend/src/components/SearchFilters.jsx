@@ -90,7 +90,7 @@ const SearchFilters = ({ setCars }) => {
           options={makers}
           selected={selectedMaker}
           onChange={setSelectedMaker}
-          containerClass={"btn border-black"}
+          containerClass={"btn border-black bg-white"}
           itemClass={"w-full"}
 
         />
@@ -99,7 +99,7 @@ const SearchFilters = ({ setCars }) => {
           options={models}
           selected={selectedModel}
           onChange={setSelectedModel}
-          containerClass={"btn border-black"}
+          containerClass={"btn border-black bg-white"}
           itemClass={"w-full"}
 
         />

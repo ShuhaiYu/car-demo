@@ -5,7 +5,10 @@ const YearRangeDropdown = ({ startYear, endYear, onYearChange }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
-  const yearOptions = Array.from({ length: 2024 - 2008 + 1 }, (_, i) => 2008 + i);
+  const yearOptions = Array.from(
+    { length: 2024 - 2008 + 1 },
+    (_, i) => 2008 + i
+  );
 
   const handleYearChange = (type, value) => {
     const numericValue = Number(value);
@@ -35,7 +38,7 @@ const YearRangeDropdown = ({ startYear, endYear, onYearChange }) => {
 
   return (
     <div className="relative" ref={dropdownRef}>
-      <button onClick={toggleDropdown} className="btn border-black">
+      <button onClick={toggleDropdown} className="btn border-black bg-white">
         {startYear} ~ {endYear}
       </button>
       {isOpen && (
@@ -49,7 +52,7 @@ const YearRangeDropdown = ({ startYear, endYear, onYearChange }) => {
                 selected={startYear.toString()}
                 onChange={(value) => handleYearChange("startYear", value)}
                 containerClass={"btn border-black"}
-
+                itemClass={"w-full"}
               />
             </div>
             <div>
@@ -60,7 +63,7 @@ const YearRangeDropdown = ({ startYear, endYear, onYearChange }) => {
                 selected={endYear.toString()}
                 onChange={(value) => handleYearChange("endYear", value)}
                 containerClass={"btn border-black"}
-
+                itemClass={"w-full"}
               />
             </div>
           </div>
